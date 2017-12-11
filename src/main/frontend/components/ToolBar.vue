@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar dark class="primary">
+  <v-toolbar clipped-left fixed app dark class="primary">
     <v-toolbar-side-icon v-on:click="toggleDrawer"></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">Title</v-toolbar-title>
     <v-spacer></v-spacer>

@@ -1,16 +1,16 @@
 <template>
-<v-app>
-  <v-navigation-drawer persistent v-model="drawer" light enable-resize-watcher overflow>
-    <my-menu></my-menu>
-  </v-navigation-drawer>
-  <my-tool-bar></my-tool-bar>
-  <main>
-    <v-container fluid>
-      <router-view></router-view>
-    </v-container>
-  </main>
-  <v-footer></v-footer>
-</v-app>
+  <v-app>
+    <v-navigation-drawer fixed clipped app v-model="drawer">
+      <my-menu></my-menu>
+    </v-navigation-drawer>
+    <my-tool-bar></my-tool-bar>
+    <v-content>
+      <v-container fruid fill-height>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+    <v-footer></v-footer>
+  </v-app>
 </template>
 
 <script lang="ts">
