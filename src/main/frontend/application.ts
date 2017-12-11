@@ -10,7 +10,7 @@ import Vuetify from "vuetify";
 import router from "./router/router";
 
 // App Components
-import AppMain from "components/AppMain.vue";
+import AppMain from "@/components/AppMain.vue";
 
 // CSS
 // tslint:disable-next-line:no-import-side-effect

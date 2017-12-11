@@ -26,9 +26,9 @@
 // Framework 
 import Vue from "vue";
 import Component from "vue-class-component";
-import HttpClient from "http/httpclient";
+import HttpClient from "@/http/httpclient";
 
-import store from "store/store";
+import store from "@/store/store";
 
 @Component({
   store

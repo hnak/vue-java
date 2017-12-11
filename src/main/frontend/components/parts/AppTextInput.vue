@@ -21,7 +21,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 // model
-import input from "components/parts/AppTextInputModel"
+import input from "@/components/parts/AppTextInputModel"
 
 @Component({
   props: {

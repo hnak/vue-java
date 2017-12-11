@@ -43,12 +43,12 @@ import HttpClient from "http/httpclient";
 import {VForm} from "vuetify/src/components/index.js";
 
 // parts
-import AppTextInput from "components/parts/AppTextInput.vue";
-import AppTextInputModel from "components/parts/AppTextInputModel";
-import AppSelectBox from "components/parts/AppSelectBox.vue";
-import AppSelectBoxModel from "components/parts/AppSelectBoxModel";
-import { SubjectType, allSubjectType } from "enums/subjectType";
-import { Chapters, allChapter } from "enums/chapters";
+import AppTextInput from "@/components/parts/AppTextInput.vue";
+import AppTextInputModel from "@/components/parts/AppTextInputModel";
+import AppSelectBox from "@/components/parts/AppSelectBox.vue";
+import AppSelectBoxModel from "@/components/parts/AppSelectBoxModel";
+import { SubjectType, allSubjectType } from "@/enums/subjectType";
+import { Chapters, allChapter } from "@/enums/chapters";
 
 @Component({
   components: {

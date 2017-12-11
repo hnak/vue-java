@@ -1,14 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import HomePage from "components/pages/HomePage.vue";
-import LoginPage from "components/pages/LoginPage.vue";
-import MemberDetail from "components/pages/member/MemberDetail.vue";
-import MemberList from "components/pages/member/MemberList.vue";
-import MemberPage from "components/pages/MemberPage.vue";
-import SubjectPage from "components/pages/SubjectPage.vue";
+import HomePage from "@/components/pages/HomePage.vue";
+import LoginPage from "@/components/pages/LoginPage.vue";
+import MemberDetail from "@/components/pages/member/MemberDetail.vue";
+import MemberList from "@/components/pages/member/MemberList.vue";
+import MemberPage from "@/components/pages/MemberPage.vue";
+import SubjectPage from "@/components/pages/SubjectPage.vue";
 
-import store from "store/store";
+import store from "@/store/store";
 
 Vue.use(VueRouter);
 

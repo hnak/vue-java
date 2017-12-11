@@ -23,7 +23,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 // model
-import input from "components/parts/AppSelectBoxModel"
+import input from "@/components/parts/AppSelectBoxModel"
 
 @Component({
   props: {

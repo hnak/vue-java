@@ -45,10 +45,7 @@ const config = {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'components': path.join(__dirname, 'src/main/frontend/components'),
-      'http': path.join(__dirname, 'src/main/frontend/http'),
-      'enums': path.join(__dirname, 'src/main/frontend/enums'),
-      'store': path.join(__dirname, 'src/main/frontend/store')
+      '@': path.resolve(__dirname, 'src/main/frontend')
     }
   },
   devServer: {

@@ -14,7 +14,7 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 
-import store from "store/store";
+import store from "@/store/store";
 
 @Component({
   store

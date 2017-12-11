@@ -18,9 +18,9 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 
-import MyMenu from "components/Menu.vue";
-import MyToolBar from "components/ToolBar.vue";
-import store from "store/store";
+import MyMenu from "@/components/Menu.vue";
+import MyToolBar from "@/components/ToolBar.vue";
+import store from "@/store/store";
 
 @Component({
   components: {

@@ -11,7 +11,7 @@
 // Framework 
 import Vue from "vue";
 import Component from "vue-class-component";
-import HttpClient from "http/httpclient";
+import HttpClient from "@/http/httpclient";
 
 @Component
 export default class MemberPage extends Vue {
