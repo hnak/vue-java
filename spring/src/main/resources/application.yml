@@ -6,9 +6,9 @@ spring:
       ddl-auto: validate
     properties:
       hibernate:
-        dialect:  org.hibernate.MySQL5Dialect
+        dialect: org.hibernate.dialect.MySQL5Dialect
 logging:
   file: logs/myapp.log
   level:
-    org.springframework.web:  INFO
+    org.springframework.web: INFO
     jp.co.condor: DEBUG
