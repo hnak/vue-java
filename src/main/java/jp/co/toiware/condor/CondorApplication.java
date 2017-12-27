@@ -1,12 +1,12 @@
-package jp.co.toiware.hobro;
+package jp.co.toiware.condor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HobroApplication {
+public class CondorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HobroApplication.class, args);
+		SpringApplication.run(CondorApplication.class, args);
 	}
 }
