@@ -6,6 +6,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
+import jp.co.toiware.condor.config.MessageWebSocketHandler;
 import jp.co.toiware.condor.domain.entity.User;
 import jp.co.toiware.condor.service.SampleService;
 import reactor.core.publisher.Flux;
@@ -26,9 +27,13 @@ public class SampleController {
     @Autowired
     private SampleService SampleService;
 
+    @Autowired
+    private MessageWebSocketHandler messageWebSocketHandler;
+
     public RouterFunction<ServerResponse> routes() {
         return nest(path("/api"),
                 route(GET("/user/{userId}"), this::getUser)
+                        .andRoute(GET("/message"), this::sendMessage)
                         // .andRoute(GET("/block/{blockHash}"), this::getBlock)
         );
     }
@@ -41,5 +46,10 @@ public class SampleController {
         } else {
             return notFound().build();
         }
+    }
+
+    private Mono<ServerResponse> sendMessage(ServerRequest req) {
+        messageWebSocketHandler.sendMessage("Server to Client TEST message!");
+        return ok().build();
     }
 }
