@@ -1,6 +1,6 @@
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
-spring/logs
+logs
 spring/build
 
 ### STS ###
