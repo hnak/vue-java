@@ -1,15 +1,5 @@
 version: '2'
 services:
-  app:
-    image: openjdk:8-jdk-alpine
-    ports:
-        - "8080:8080"
-    volumes:
-        - ./spring:/app
-    working_dir: /app
-    command: ./gradlew bootRun
-    depends_on:
-      - db
   db:
     build:
       context: .

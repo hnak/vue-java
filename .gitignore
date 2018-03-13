@@ -1,33 +1,10 @@
 .gradle
-!gradle/wrapper/gradle-wrapper.jar
+gradle
 logs
-spring/build
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
+build
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-### webpack&Vue.js ###
-node_modules
-
-### VSCode ###
-bin
-.vscode
