@@ -15,26 +15,21 @@ SpringBootをコアコンポーネントとしており、試験的に（Servlet
 - Spring5
 - MySQL
 - Docker/docker-compose
-
-フロントエンド開発・テスト環境以上はDockerで実行する想定です。
-ローカル開発の際にはデバッガーを利用するためJava実行環境・MySQLをインストールしてください。
+- IntelliJ IDEA
 
 # Build Setup
 ```bash
-# Local(事前にMySQLをインストールしてください。)
-cd spring
-./gradlew bootRun
-
-# Docker
+# Docker(MySQLをコンテナで起動します)
 docker-compose build
 docker-compose up
+# IntelliJ
+gradleタスクからbootRunを実行
 ```
 
 ## フォルダ構成
 ```
-docker-compose.yml
-logs : ログファイル出力場所  
-spring
+├─docker-compose.yml
+├─logs : ログファイル出力場所  
 ├─build.gradle : ビルド定義  
 ├─lib : 外部ライブラリ置き場  
 └─src  
